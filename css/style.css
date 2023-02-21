@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap');
 
 .nombre {
     font-family: 'Raleway';
@@ -19,6 +19,7 @@
     color: black;
 }
 
+.enlacontac,
 .integrantes,
 .imagenes,
 .caracteristica,
@@ -106,4 +107,24 @@
 
 .espaciosencillo {
     line-height: 0.1;
+}
+
+.box {
+    padding: 1%;
+    background: rgba(47, 48, 58, 1);
+
+}
+
+.pie {
+    font-family: 'Raleway';
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.enlacontac {
+    font-family: 'Roboto';
+    font: size 14px;
+    font-style: normal;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
 }
