@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@700&display=swap');
+
+
+.nombre {
+    font-family: 'Raleway';
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.nombre:hover {
+    text-decoration: underline:none
+}
+
+.azul {
+    color: #2196F3;
+}
+
+.negro {
+    color: black;
+}
+
+.integrantes,
+.imagenes,
+.caracteristica,
+.navega,
+.navcontactos {
+    list-style-type: none;
+}
+
+.sinlinea {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #212121;
+
+}
+
+.sinlineacont {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: #757575;
+}
+
+.banner {
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 25px;
+    color: #FFFFFF;
+    padding-top: 0;
+}
+
+.marco {
+    width: 100%;
+    height: 75px;
+    background-color: #2F303A;
+    margin-top: 0;
+}
+
+.bot {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    background-color: #2196F3;
+    color: rgba(255, 255, 255, 1);
+}
+
+.subtitle {
+    font-family: 'Roboto';
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.descri {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    text-align: left;
+    color: rgba(117, 117, 117, 1);
+    ;
+}
+
+.equipo,
+.labor {
+    font-family: 'Roboto';
+    font-style: normal;
+    text-transform: initial;
+}
+
+.integrante {
+    font-family: 'Roboto';
+    font-style: Regular;
+    font-size: 16px;
+    text-transform: initial;
+    text-align: center;
+}
+
+.cargo {
+    font-family: 'Roboto';
+    font-style: Regular;
+    font-size: 16px;
+    color: rgba(117, 117, 117, 1);
+    text-align: center;
+
+}
+
+.espaciosencillo {
+    line-height: 0.1;
+}
