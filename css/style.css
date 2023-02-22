@@ -36,6 +36,12 @@
 
 }
 
+.portitle {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-variant: normal;
+}
+
 .sinlineacont {
     text-decoration: none;
     font-family: 'Roboto';
@@ -127,4 +133,19 @@
     font-style: normal;
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
+}
+
+.seccion {
+    font-family: 'Roboto';
+    font-style: Regular;
+    font-size: 16px;
+    color: rgba(117, 117, 117, 1);
+
+}
+
+.division {
+    font-family: 'Roboto';
+    font-style: Regular;
+    font-size: 16px;
+    text-transform: initial;
 }
