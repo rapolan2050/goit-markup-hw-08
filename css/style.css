@@ -72,6 +72,10 @@
     color: rgba(255, 255, 255, 1);
 }
 
+.bot:hover {
+    text-shadow: #FFFFFF;
+}
+
 .subtitle {
     font-family: 'Roboto';
     font-size: large;
