@@ -7,9 +7,45 @@
     font-size: 26px;
 }
 
-.nombre.focus,
+.azul:focus,
+.negro:focus,
+.azul::hover,
+.negro:hover,
+.nombre:focus,
 .nombre:hover {
-    text-decoration: underline:none
+    background-color: orange;
+}
+
+.direccion:hover,
+.direccion:focus,
+.sinlineacont:hover,
+.sinlineacont:focus,
+.azul.focus,
+.azul:hover,
+.sinlinea:focus,
+.sinlinea:hover {
+    color: orangered;
+}
+
+
+.equipo:hover,
+.equipo:focus,
+.labor:hover,
+.labor:focus,
+.descri:hover,
+.descri:focus,
+.subtitle:focus,
+.subtitle:hover,
+.banner:hover,
+.banner:focus,
+.bot:hover,
+.bot:focus {
+    background-color: #FFFFFF;
+    color: orangered;
+}
+
+.sinlineacont:visited {
+    color: green;
 }
 
 .azul {
