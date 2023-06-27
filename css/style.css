@@ -293,10 +293,11 @@ height: 600px;
     display: flex;
     flex-direction:row;
     justify-content:center;
+
 }
 
 .caracteristica .caja{
-    margin:15px;
+padding: 0 30px;
 }
 
 .Negocio{
