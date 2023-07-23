@@ -14,31 +14,31 @@ padding:0;
     background-color: var(--primary-white-color);
 }
 
-.container .nombre {
+.container-h .namesite {
     font-family: "Raleway";
     font-weight: 700;
     text-decoration: none;
     font-size: 26px;
-    width: 145px; 
-}
+    max-width: 145px; 
+    margin-left:215px;
+    }
 
-.azul:focus,
+.at-namesite:focus,
 .negro:focus,
-.azul::hover,
-.negro:hover,
-.nombre:focus,
-.nombre:hover {
+.at-namesite::hover,
+.namesite:focus,
+.namesite:hover {
     background-color: #2196f3;
 }
 
-.direccion:hover,
-.direccion:focus,
-.sinlineacont:hover,
-.sinlineacont:focus,
-.azul.focus,
-.azul:hover,
-.sinlinea:focus,
-.sinlinea:hover {
+.address:hover,
+.address:focus,
+.at-nav-contact:hover,
+.at-nav-contact:focus,
+.at-namesite.focus,
+.at-namesite:hover,
+.at-nav-item:focus,
+.at-nav-item:hover {
     color: #2196f3;
 }
 
@@ -48,33 +48,26 @@ padding:0;
     color: #2196f3;
 }
 
-.sinlineacont:visited {
+.at-nav-contact:visited {
     color: green;
 }
 
-.azul {
+.at-namesite {
     color: #2196f3;
 }
 
-.negro {
-    color: black;
-}
 
-.enlacontac,
-.integrantes,
-.imagenes,
-.caracteristica,
-.navega,
-.navcontactos {
+.item-contact,
+.equipment,
+.picture-buss,
+.card-feature,
+.menu-nav,
+.nav-contact {
     list-style-type: none;
-    align-content:space-between;
 }
 
-.navega{
-margin-left:93px;
-}
 
-.sinlinea {
+.at-nav-item {
     text-decoration: none;
     font-family: "Roboto";
     font-weight: 500;
@@ -90,7 +83,7 @@ margin-left:93px;
     font-variant: normal;
 }
 
-.sinlineacont {
+.at-nav-contact {
     text-decoration: none;
     font-family: "Roboto";
     font-weight: 500;
@@ -135,13 +128,13 @@ margin-left:93px;
     color: rgba(255, 255, 255, 1);
 }
 
-.caracteristica .caja{ 
+.box-feature{ 
     width:270px;
     height: 251px;
     margin-top: 25px;
 }
 
-.caracteristica img{
+.card-feature img{  
 display: block;
 margin:auto;
 }
@@ -153,13 +146,12 @@ margin:auto;
     line-height: 16.41px;
     letter-spacing: 3%;
     text-transform: uppercase;
-    margin-top:30px;
+    margin-top:50px;
     top: 775px;
-    border-radius: nullpx;
 
 }
 
-.descri {
+.content {
     font-family: "Roboto";
     font-style:normal;
     line-height:24px;
@@ -173,16 +165,16 @@ margin:auto;
 }
 
 
-.labor {
+.title-bsn {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.19;
     padding-top: 94px;
-    padding-left:619.43px;
     letter-spacing: 0.03em;
     padding-bottom:55.05px;
+    text-align: center;
 }
 
 
@@ -206,19 +198,19 @@ margin:auto;
     z-index: 2;
     margin-top:-75px;
 }   
-.equipo{
+.team-title{
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.19;
     padding-bottom:50px;
-    margin-left:669px;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 
 
-.integrante {
+.team-member {
     font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
@@ -227,7 +219,7 @@ margin:auto;
     text-align: center;
 }
 
-.cargo {
+.line-manager {
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -239,18 +231,18 @@ margin:auto;
     margin-top:10px;
 }
 
-.espaciosencillo {
+.team-box {
     background-color: #F5F4FA;
     line-height: 0.1;
     gap:30px;
-    width: 1600px;
+    max-width: 1600px;
     height: 708px;
 }
 
 .box {
     display:flex;
     background: rgba(47, 48, 58, 1);
-    width: 1600px;
+    max-width: 1600px;
     height: 252px;
     flex-direction:row;
     flex-wrap: wrap;
@@ -260,7 +252,7 @@ margin:auto;
     padding:50px;
 }
 
-.pie {
+.item-footer {
     font-family: "Raleway";
     font-size: 26px;
     text-decoration: none;
@@ -270,7 +262,7 @@ margin:auto;
 }
 
 
-.enlacontac {
+.item-contact {
     display:flex;
     flex-direction: column;
     font-family: "Roboto";
@@ -282,7 +274,7 @@ margin:auto;
     padding-top:9px;
 }   
 
-.seccion {
+.sec-buss {
     font-family: "Roboto";
     font-style: Regular;
     font-size: 16px;
@@ -292,7 +284,7 @@ margin:auto;
 
 }
 
-.division {
+.div-buss {
     font-family: "Roboto";
     font-style: Regular;
     font-size:18 px;
@@ -302,11 +294,11 @@ margin:auto;
 
 }
 
-.direccion {
+.address {
     font-weight: bold;
 }
 
-.btnport {
+.btn-buss {
     font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
@@ -320,74 +312,94 @@ margin:auto;
     border: none;
 }
 
-.btnport:active,
-.btnport:focus,
-.btnport:hover {
+.btn-buss:active,
+.btn-buss:focus,
+.btn-buss:hover {
     background-color: #2196f3;
     color: #ffffff;
     font-weight: 500;
 }
 
-.container{ 
+.container-h{ 
     display:flex;
     flex-direction:row;
     flex-grow: 0;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
-    margin-left:215px;
-    width:1600px;
+    max-width:1600px;
     height: 80px;
 }
 
-.container .navcontactos{
-    margin-left: 294px;
+.container-h .nav-contact{
+    display:flex;
+    flex-grow: 0;
+    gap:50px;
+    align-items: center;
 }
 
 
-.container .navitem{
-    display:inline-block;
-    list-style: none;
-    text-align: left;
-    margin-right:50px;
+
+.menu-nav {
+display:flexbox;
+min-width:  281px;
+height: 16px; 
+margin-left:93px;  
 }
 
 
-.container .contaitems {
-  display:inline-block;
-   text-align: left;
-   margin-right: 50px;
+.container-h .nav-item{
+    padding:0;
+    margin:0;
+    display:inline;
+    display:list-item;
+    display:inline-flex;
+    list-style: 0;
+    justify-content:center;
 }
 
-.marco{
+
+.nav-item:nth-child(2){
+margin-left: 50px;
+}
+
+.nav-item:nth-child(3){
+margin-left: 50px;
+}
+
+
+
+.canvas{
 display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: 1600px;
+max-width: 1600px;
 height: 600px;
 background-color: #2f303a 40%;
 border: 1px solid #ECECEC;
 }
 
-.marco{
+.canvas{
  background-image: url("../imagenes/ppal.jpg");
 }
 
-.caracteristica {
+.card-feature {
     display: flex;
     flex-direction:row;
     justify-content:space-evenly;
     gap: 30px;
+
 }
 
-.about{  
-    width: 1170px;
+.gal-about{  
+    max-width: 1170px;
     height: 251px;
     margin-top: 82px;
-    margin-left:206px;
+    margin-right:auto;
+    margin-left:auto;
 }
 
-.opcaract{
+.menu-opt{
     display:flex;
     max-width: 611px;
     align-items:flex-end;
@@ -403,40 +415,43 @@ border: 1px solid #ECECEC;
 display:flex;
 flex-direction: row;
 flex-wrap: wrap;
-width: 1173,16px;
+max-width: 1173,16px;
 }
 
 
-.integrantes{
+.equipment{
     display:flex;
     flex-direction:row;
     justify-content:center;
-    width:1177px;
+    max-width:1177px;
     height: 428px;
     margin-top:50px;
-    margin-left:208px;
     margin-bottom:50px;
     gap:37px;
+    margin-right: auto;
+    margin-left:auto;
 }
 
-.integr{
+.menu-port-buss{
     display:flex;   
-    width:1170px;
+    max-width:1170px;
     flex-wrap:wrap;
     justify-content:center;
     list-style-type: none;
     gap:20px;
     margin-bottom: 82px;
-    margin-left:250px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-.Negocio{
+.info-bussines{
     display:flex;
     max-width: 1173.16px;
     justify-content:flex-start;
-    margin-left: 215px;
     gap:30.26px;
     margin-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card{
@@ -467,7 +482,7 @@ justify-content: center;
 align-items: center;
 }
 
-.icon{
+.icon-social{
     margin-top:16px;
     display: flex;
     flex-direction: row;
@@ -477,33 +492,33 @@ align-items: center;
     height:44px;
 }
 
-.icon img{
+.icon-social img{
     height: 20px;
     width: 20px;
 }
 
-.cliregular{
+.list-regards{
     display:flex;
     display:inline-block;   
     min-width: 1170px;
     height: 162px;
-    margin-left:215px;
     flex-wrap: nowrap;
     margin-top:59px;
+    flex-shrink: 3;
+    margin-left: 6.5%;
 }
 
-.cliregular .regulo {
-
+.title-list {
 margin-bottom:38px;
 font-family: Roboto;
 font-size: 36px;
 font-weight: 700;
 line-height: 42px;
 letter-spacing: 0.03em;
-margin-left: 640px;
+text-align: center;
 }
 
-.cliregular .enterp{
+.list-regards .enter-list{
 display:flex;
 display:inline-block;
 border:1px ridge grey;
@@ -513,42 +528,41 @@ flex-shrink: 1;
 }
 
 
-.enterp img{
+.enter-list img{
     display:flex;
     display:block;
     margin: auto;
     margin-top:15px;
-    
 }
     
 
 
-.enterp:nth-child(2){
+.enter-list:nth-child(2){
     margin-right:-1;  
 }
 
-.enterp:nth-child(3){
+.enter-list:nth-child(3){
     margin-left:2.17%;   
 }
 
-.enterp:nth-child(4){
+.enter-list:nth-child(4){
     margin-left:2.17%;  
 }
 
-.enterp:nth-child(5){
+.enter-list:nth-child(5){
     margin-left:2.17%;  
 
 }
 
-.enterp:nth-child(6){
+.enter-list:nth-child(6){
     margin-left:2.17%;  
 }
 
-.enterp:nth-child(7){
+.enter-list:nth-child(7){
     margin-left:2.17%;  
 }
 
-.iconos{
+.table-social{
     display:flex;
     flex-direction: column;
     width: 206px;
@@ -557,7 +571,7 @@ flex-shrink: 1;
 }
 
 
-.tilredes {
+.title-social {
 font-family: Roboto;
 font-size: 14px;
 font-weight: 700;
@@ -572,10 +586,8 @@ color:  #FFFFFF;
 margin-bottom:20px;
 }
 
-.iconos .redesociales{
+.table-social .list-socials{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-        
