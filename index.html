@@ -19,27 +19,28 @@
             <nav>
                 <ul class="menu-nav">
                     <li class="nav-item">
-                        <a href="32424" class="at-nav-item">
-                            Estudio
-                        </a>
+                        <a href="32424" class="at-nav-item">Estudio</a>
+                      <p class="after"></p>
                     </li>
                     <li class="nav-item">
                         <a href="./portafolio.html" class="at-nav-item">Portafolio</a>
+                      <p class="after" id="second"></p>
                     </li>
                     <li class="nav-item">
                         <a href="sdfsdfdfdf" class="at-nav-item">Contactos</a>
+                      <p class="after" id="third"></p>
                     </li>
                 </ul>
             </nav>
             <nav>
                 <ul class="nav-contact">
                     <li class="nav-contact-i">
-                        <img src="./imagenes/iconos/sobre.svg" alt="mail">
+                        <img src="imagenes/iconos/sobre.svg" alt="mail">
                         <a href="info@devstudio.com" class="at-nav-contact">info@devstudio.com</a>
                     </li>
 
                     <li class="av-contact-i">
-                        <img src="./imagenes/iconos/teléfono_inteligente.svg" alt="teléfono inteligente">
+                        <img src="imagenes/iconos/teléfono_inteligente.svg" alt="teléfono inteligente">
                         <a href="tel:+525555296000" class="at-nav-contact">+525555296000</a>
                     </li>
                 </ul>
@@ -50,29 +51,41 @@
                 <h1 class="banner">
                     SOLUCIONES EFICACES PARA SU NEGOCIO
                 </h1>
-                <button class="bot" type="button">Solicite Nuestro Servicio</button>
+                <button data-modal-open class="bot" type="button"> Solicite Nuestro Servicio</button>
+                <div class="backdrop-container is-hidden" data-modal>
+                    <div class="modal">
+                        <h1>Ventana Modal</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Numquam eligendi dolorum voluptatibus officiis deserunt
+                            placeat porro, consequuntur illo voluptatem animi commodi
+                             iusto corporis voluptate eaque delectus nostrum dignissimos
+                             excepturi repudiandae.
+                        </p>
+                     <button data-modal-close id="close-btn">X</button>
+                    </div>
+                </div>
             </section>
             <section class="gal-about">
                 <ul class="card-feature">
                     <li class="box-feature">
-                        <img src="./imagenes/iconos/comuni.svg" alt="Procesos">
+                        <img src="imagenes/iconos/comuni.svg" alt="Procesos">
                         <h4 class="subtitle">atención a los detalles</h4>
                         <p class="content">Nos adentramos en todos los detalles y procesos de su negocio, para asi desarrollar una solución.                                                                        a la medida.
                         </p>
                     </li>
                     <li class="box-feature">
-                        <img src="./imagenes/iconos/reloj.svg" alt="Puntualidad">
+                        <img src="imagenes/iconos/reloj.svg" alt="Puntualidad">
                         <h4 class="subtitle">PUNTUALIDAD</h4>
                         <p class="content">Con nosotros usted puede sentirse seguro y protegido. Un principio importante de la empresa respetar su tiempo y respetar los plazos acordados.
                         </p>
                     </li>
                     <li class="box-feature">
-                        <img src="./imagenes/iconos/computer.svg" alt="Planificación">
+                        <img src="imagenes/iconos/computer.svg" alt="Planificación">
                         <h4 class="subtitle">PLANIFICACION</h4>
                         <p class="content">Usted prodrá observar y parcicipar en cada fase de desarrollo y aplicación de soluciones</p>
                     </li>
                     <li class="box-feature">
-                        <img src="./imagenes/iconos/robot.svg" alt="tecnología moderna">
+                        <img src="imagenes/iconos/robot.svg" alt="tecnología moderna">
                         <h4 class="subtitle">TECNOLOGIA MODERNA</h4>
                         <p class="content">Usamos tecnologías innovadoras para resolver las tareas asignadas. Es hora de simplificar los procesos title-bsnales.
                         </p>
@@ -87,11 +100,11 @@
                         <img src="./imagenes/manosteclado.jpg" alt="teclado">
                         <div class="sticker">APLICACIONES DE ESCRITORIO</div>
                     </li>
-                    <li class="picture-buss">
+                    <li class="imagenes">
                         <img src="./imagenes/aplimobiles.jpg" alt="Mobiles">
                         <div class="sticker">APLICACIONES MÓVILES</div>
                     </li>
-                    <li class="picture-buss">
+                    <li class="imagenes">
                         <img src="./imagenes/Aquededicamos.jpg" alt="dedicamos">
                         <div class="sticker">SOLUCIONES DE DISEÑO</div>
                     </li>
@@ -105,10 +118,10 @@
                             <h3 class="team-member">Andres Cubo</h3>
                             <p class="line-manager">Diseñador de Productos</p>
                             <div class="icon-social">
-                                <img src="./imagenes/iconos/20x20/instagram 2.svg" alt="instagram">
-                                <img src="./imagenes/iconos/20x20/twitter 1.svg" alt="twitter">
-                                <img src="./imagenes/iconos/20x20/facebook 1.svg" alt="facebook">
-                                <img src="./imagenes/iconos/20x20/linkedin 1.svg" alt="linkedin">
+                                <img src="../imagenes/iconos/20x20/instagram 2.svg" alt="instagram">
+                                <img src="../imagenes/iconos/20x20/twitter 1.svg" alt="twitter">
+                                <img src="../imagenes/iconos/20x20/facebook 1.svg" alt="facebook">
+                                <img src="../imagenes/iconos/20x20/linkedin 1.svg" alt="linkedin">
                             </div>
                         </div>
                     </li>
@@ -118,10 +131,10 @@
                             <h3 class="team-member">Carla Palacios</h3>
                             <p class="line-manager">Desarrollador Frontend</p>
                             <div class="icon-social">
-                                <img src="./imagenes/iconos/20x20/instagram 2.svg" alt="instagram">
-                                <img src="./imagenes/iconos/20x20/twitter 1.svg" alt="twitter">
-                                <img src="./imagenes/iconos/20x20/facebook 1.svg" alt="facebook">
-                                <img src="./imagenes/iconos/20x20/linkedin 1.svg" alt="linkedin">
+                                <img src="/imagenes/iconos/20x20/instagram 2.svg" alt="instagram">
+                                <img src="/imagenes/iconos/20x20/twitter 1.svg" alt="twitter">
+                                <img src="/imagenes/iconos/20x20/facebook 1.svg" alt="facebook">
+                                <img src="/imagenes/iconos/20x20/linkedin 1.svg" alt="linkedin">
                             </div>
                         </div>
                     </li>
@@ -130,10 +143,10 @@
                             <h3 class="team-member">Mario Dorado</h3>
                             <p class="line-manager">Marketing</p>
                             <div class="icon-social">
-                                <img src="./imagenes/iconos/20x20/instagram 2.svg" alt="instagram">
-                                <img src="./imagenes/iconos/20x20/twitter 1.svg" alt="twitter">
-                                <img src="./imagenes/iconos/20x20/facebook 1.svg" alt="facebook">
-                                <img src="./imagenes/iconos/20x20/linkedin 1.svg" alt="linkedin">
+                                <img src="/imagenes/iconos/20x20/instagram 2.svg" alt="instagram">
+                                <img src="/imagenes/iconos/20x20/twitter 1.svg" alt="twitter">
+                                <img src="/imagenes/iconos/20x20/facebook 1.svg" alt="facebook">
+                                <img src="/imagenes/iconos/20x20/linkedin 1.svg" alt="linkedin">
                             </div>
                         </div>
                     </li>
@@ -142,10 +155,10 @@
                             <h3 class="team-member">Pablo Mijangos</h3>
                             <p class="line-manager">Desarrollador IU</p>
                             <div class="icon-social">
-                                <img src="./imagenes/iconos/20x20/instagram 2.svg" alt="instagram">
-                                <img src="./imagenes/iconos/20x20/twitter 1.svg" alt="twitter">
-                                <img src="./imagenes/iconos/20x20/facebook 1.svg" alt="facebook">
-                                <img src="./imagenes/iconos/20x20/linkedin 1.svg" alt="linkedin">
+                                <img src="/imagenes/iconos/20x20/instagram 2.svg" alt="instagram">
+                                <img src="/imagenes/iconos/20x20/twitter 1.svg" alt="twitter">
+                                <img src="/imagenes/iconos/20x20/facebook 1.svg" alt="facebook">
+                                <img src="/imagenes/iconos/20x20/linkedin 1.svg" alt="linkedin">
                             </div>
                         </div>
 
@@ -155,22 +168,22 @@
             <section class="list-regards">
                  <h2 class="title-list">Clientes Regulares</h2>
                    <a  class="enter-list" href="#">
-                        <img src="./imagenes/iconos/grupo (1).svg" alt="cia1">
+                        <img src="/imagenes/iconos/grupo (1).svg" alt="cia1">
                         </a>
                     <a  class="enter-list" href="#">
-                        <img src="./imagenes/iconos/Company1.svg" alt="cia1">
+                        <img src="/imagenes/iconos/Company1.svg" alt="cia1">
                             </a>
                     <a class="enter-list" href="#">
-                        <img src="./imagenes/iconos/Company2.svg" alt="cia1">
+                        <img src="/imagenes/iconos/Company2.svg" alt="cia1">
                             </a>
                     <a class="enter-list" href="#">
-                        <img src="./imagenes/iconos/foster_peters.svg" alt="cia1">
+                        <img src="/imagenes/iconos/foster_peters.svg" alt="cia1">
                             </a>
                     <a class="enter-list" href="#">
-                        <img src="./imagenes/iconos/brand.svg" alt="cia1">
+                        <img src="/imagenes/iconos/brand.svg" alt="cia1">
                             </a>
                     <a class="enter-list" href="#">
-                        <img src="./imagenes/iconos/Company.svg" alt="cia1">
+                        <img src="/imagenes/iconos/Company.svg" alt="cia1">
                             </a>
                 </section>
         </main>
@@ -200,19 +213,20 @@
                 <span class="title-social">ENCUENTRENOS EN</span>
                 <div class="list-socials">
                         <a class="imagin" href="#">
-                                <img src="./imagenes/iconos/iconosfooter/instagram.svg" alt="instagram">
+                                <img src="/imagenes/iconos/iconosfooter/instagram.svg" alt="instagram">
                         </a>
                         <a class="imagin" href="#">
-                                <img src="./imagenes/iconos/iconosfooter/twitter.svg" alt="twitter">
+                                <img src="/imagenes/iconos/iconosfooter/twitter.svg" alt="twitter">
                         </a>
                         <a class="imagin" href="#">
-                                <img src="./imagenes/iconos/iconosfooter/facebook.svg" alt="facebook">
+                                <img src="/imagenes/iconos/iconosfooter/facebook.svg" alt="facebook">
                         </a>
                         <a class="imagin" href="#">
-                                <img src="./imagenes/iconos/iconosfooter/linkedin.svg" alt="linkedin">
+                                <img src="/imagenes/iconos/iconosfooter/linkedin.svg" alt="linkedin">
                         </a>
                 </div>
         </section>
         </footer>
+        <script src="js/modal.js"></script>
     </body>
 </html>
