@@ -1,2 +1,2 @@
-# goit-markup-hw-05
-https://rapolan2050.github.io/goit-markup-hw-05/
+# goit-markup-hw-06
+https://rapolan2050.github.io/goit-markup-hw-06/
