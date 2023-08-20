@@ -1,4 +1,5 @@
 (() => {
+
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open]"),
     closeModalBtn: document.querySelector("[data-modal-close]"),
@@ -12,3 +13,12 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
+
+function mostrar(){
+    document.getElementById('check-svg').style.display = 'block';
+    }
+  
+function ocultar(){
+	document.getElementById('check-svg').style.display = 'none';
+	}
+

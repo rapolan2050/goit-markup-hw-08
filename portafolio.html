@@ -5,46 +5,43 @@
         <title>portafolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="<https://fonts.gstatic.com>">
+        <link rel="preconnect" href="https://fonts.gstatic.com>">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css" integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500&family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
     </head>
-
     <body>
         <header class="container-h">
-            <div>
-                <a class="namesite">
-                    <span class="at-namesite">Webstudio</span>
-                </a>
-            </div>
-            <nav>
+        <nav class="container-nav">
+            <a class="namesite">
+                <span class="at-namesite">WebStudio</span>
+            </a>
                 <ul class="menu-nav">
                     <li class="nav-item">
-                        <a href="32424" class="at-nav-item">Estudio
-                        </a>
+                        <a href="32424" class="at-nav-item">Estudio</a>
                         <p class="after"></p>
                     </li>
                     <li class="nav-item">
                         <a href="./portafolio.html" class="at-nav-item">Portafolio</a>
-                         <p class="after" id="second"></p>
+                        <p class="after" id="second"></p>
                     </li>
                     <li class="nav-item">
                         <a href="sdfsdfdfdf" class="at-nav-item">Contactos</a>
                         <p class="after" id="third"></p>
                     </li>
                 </ul>
+                <ul class="nav-contact">
+                    <li class="nav-contact-i">
+                        <img src="imagenes/iconos/sobre.svg" alt="mail" />
+                        <a href="info@studio.com" class="at-nav-contact">info@devstudio.com</a>
+                    </li>
+    
+                    <li class="nav-contact-i">
+                        <img src="imagenes/iconos/teléfono_inteligente.svg" alt="teléfono inteligente" />
+                        <a href="tel:+525555296000" class="at-nav-contact">+525555296000</a>
+                    </li>
+                </ul>
             </nav>
-            <ul class="nav-contact">
-                <li class="nav-contact-i">
-                     <img src="./imagenes/iconos/sobre.svg" alt="mail">
-                    <a href="info@devstudio.com" class="at-nav-contact">info@devstudio.com</a>
-                </li>
-                <li class="nav-contact-i">
-                    <img src="./imagenes/iconos/teléfono_inteligente.svg" alt="teléfono inteligente">
-                    <a href="tel:+525555296000" class="at-nav-contact">+525555296000</a>
-                </li>
-            </ul>
         </header>
         <main>
             <section>
@@ -221,19 +218,33 @@
                 <span class="title-social">ENCUENTRENOS EN</span>
                 <div class="list-socials">
                         <a class="imagin" href="#">
-                                <img src="./imagenes/iconos/iconosfooter/instagram.svg" alt="instagram">
+                                <img src="/imagenes/iconos/iconosfooter/instagram.svg" alt="instagram">
                         </a>
                         <a class="imagin" href="#">
-                                <img src="./imagenes/iconos/iconosfooter/twitter.svg" alt="twitter">
+                                <img src="/imagenes/iconos/iconosfooter/twitter.svg" alt="twitter">
                         </a>
                         <a class="imagin" href="#">
-                                <img src="./imagenes/iconos/iconosfooter/facebook.svg" alt="facebook">
+                                <img src="/imagenes/iconos/iconosfooter/facebook.svg" alt="facebook">
                         </a>
                         <a class="imagin" href="#">
-                                <img src="./imagenes/iconos/iconosfooter/linkedin.svg" alt="linkedin">
+                                <img src="/imagenes/iconos/iconosfooter/linkedin.svg" alt="linkedin">
                         </a>
                 </div>
         </section>
+        <section class="section-form">
+            <h2 class="title-footer">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h2>
+            <form class="form-dates">
+                <div class="form-fill">
+                    <input type="email" name="email" id="mail" placeholder="correo electrónico" />
+                </div>
+                <div class="btn-telegram">
+                    <button type="submit" class="suscribe" id="btn-sub">
+                        Suscribase
+                    </button>
+                    <img src="./imagenes/iconos/enviaricono.svg" />
+                </div>
+            </form>
+        </section>
             </footer>
-    </body>
+        </body>
 </html>

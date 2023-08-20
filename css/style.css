@@ -14,13 +14,22 @@ padding:0;
     background-color: var(--primary-white-color);
 }
 
+.container-nav{
+    display:inline-flex;
+    align-items: center;
+    max-width:1600px;
+    gap:30px; 
+}
+
 .container-h .namesite {
     font-family: "Raleway";
     font-weight: 700;
     text-decoration: none;
     font-size: 26px;
     max-width: 145px; 
-    margin-left:215px;
+    margin-left:13.43%;
+    display:inline-flex;
+    align-items: center;
     }
 
 .at-namesite:focus,
@@ -59,13 +68,14 @@ padding:0;
 
 .at-namesite {
     color: #2196f3;
-    after::after visibility:visible.;
+    .after:after visibility:visible;
 }
 
 
 .menu-nav:hover{
-    after::after visibility:visible.;
+    .after:after visibility:visible;
 }
+
 .item-contact,
 .equipment,
 .picture-buss,
@@ -207,6 +217,7 @@ margin:auto;
     z-index: 2;
     margin-top:-75px;
 }   
+
 .team-title{
     font-family: "Roboto";
     font-style: normal;
@@ -251,14 +262,15 @@ margin:auto;
 .box {
     display:flex;
     background: rgba(47, 48, 58, 1);
-    max-width: 1600px;
+    max-width: 1600vw;
     height: 252px;
     flex-direction:row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     line-height: 24px;
+    align-items: center;
+    justify-content:space-evenly;
     margin-top:94px;
-    padding:50px;
 }
 
 .item-footer {
@@ -266,7 +278,6 @@ margin:auto;
     font-size: 26px;
     text-decoration: none;
     font-weight: 700;
-    margin-left: 215px;
     line-height: 30.52px;
 }
 
@@ -279,8 +290,6 @@ margin:auto;
     font-style: normal;
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
-    padding-left: 215px;
-    padding-top:9px;
 }   
 
 .sec-buss {
@@ -332,28 +341,36 @@ margin:auto;
 .container-h{ 
     display:flex;
     flex-direction:row;
-    flex-grow: 0;
     justify-content: space-between;
     align-items: center;
-    max-width:100vw;
+    max-width:1600px;
     height: 80px;
 }
 
-.container-h .nav-contact{
+.container-h{
+    max-width:1600px;
     display:flex;
-    flex-grow: 0;
-    gap:50px;
     align-items: center;
 }
 
+.nav-contact{
+    margin-left:21.5%;
+    margin-right:13.6%;
+    display:inline-flex;
+    align-items: center;
+    gap:50px;
+}
+.nav-contact-i{
+    display:flex;
+
+}
 
 
 .menu-nav {
-display:flexbox;
-min-width:  281px;
-height: 16px; 
-margin-left:93px;  
-}
+display:inline-flex; 
+align-items: center;
+margin-left:5.8%;
+}   
 
 
 .container-h .nav-item{
@@ -382,7 +399,7 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-max-width: 1600px;
+max-width:1600px ;
 height: 600px;
 background-color: #2f303a 40%;
 border: 1px solid #ECECEC;
@@ -542,8 +559,8 @@ align-items: center;
     height: 162px;
     flex-wrap: nowrap;
     margin-top:59px;
-    flex-shrink: 3;
-    margin-left: 6.5%;
+    margin-left: 2%;
+    margin-right:1%;
 }
 
 .title-list {
@@ -573,7 +590,6 @@ flex-shrink: 1;
     margin-top:15px;
 }
     
-
 
 .enter-list:nth-child(2){
     margin-right:-1;  
@@ -605,18 +621,17 @@ flex-shrink: 1;
     flex-direction: column;
     width: 206px;
     height: 80px;
-    margin-left: 70px;
 }
 
 
-.title-social {
+.title-footer {
 font-family: Roboto;
 font-size: 14px;
 font-weight: 700;
 line-height: 16px;
 letter-spacing: 0.03em;
 text-align: left;
-width: 135px;
+width: auto;
 height: 16px;
 top: 2751px;
 left: 516px;
@@ -652,7 +667,7 @@ margin-bottom:20px;
     display:flex;
     position:absolute;
     content:'';
-    border:2px solid blue;
+    border:2px solid #2196F3;
     border-radius: 25%;
     bottom:-31px;
     width:70px;
@@ -665,45 +680,245 @@ margin-bottom:20px;
     position:absolute;
     background-color:rgba(0, 0, 0, 0.5);
     box-shadow:rgba(0,0,0,0.2);
-    display:flex;
     width: 100vw;
     height: 100vh;
-    justify-content:center;
+    justify-content:flex-end;
     align-items: center;
     pointer-events: painted;
     z-index: 1;
 }
 
 .modal{
-padding:30px 30px;
-width: 300px;
-height: 400px;
+padding:40px 40px;
+width: 528px;
+height: 581px;
 background-color: white;
 border:1px solid black;
 margin:auto;
-border-radius: 5px;;
+border-radius: 4px;
+position:relative;
+display:flex;
+flex-direction: column;
+flex-wrap: wrap;
 }
 
 .modal h1{
+top:100px;  
 font-size: 25px;
 font-weight: 500;
 margin-bottom:20px;
+font-family: Roboto;
+font-size: 20px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0.03em;
+text-align: center;
 }
 
+
+.input-field{
+width: 100%;
+padding:0;
+margin:0;
+outline:none;
+height: 40px;
+padding-left:40px;
+}
+
+.box-text{
+scrollbar-width: 200px;
+outline: none;
+margin-bottom:30px;
+height: 120px;
+}
+
+.box-text::placeholder{
+font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0.01em;
+text-align: left;
+color: #75757580;
+}
+
+
+.terminos{
+display: inline-flex;
+gap:20px;
+padding-left:2.5rem;
+width:25rem;
+font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.03em;
+text-align: left;
+color: #757575;
+}
+
+
+.btn-form{
+    display:flex;
+    width: 12.5rem;
+    height: 3.125rem;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    border-style: none;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    position:static;
+    margin-bottom:-10px;
+}
+
+
+.btn-form:focus,
+.btn-form:hover{
+    box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+.label_form{
+font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0.01em;
+text-align: left;
+color: #757575;
+}
+
+.container-field{
+    position:relative;
+    display:flex;
+    height: 40px;
+    align-items: center;
+}
+
+
+.box-text:focus,
+.box-text:hover,
+.input-field:hover,
+.input-field.focus{
+    border:1px solid #2196F3;
+}
+
+.container-field:hover,
+.container-field:focus
+.back-icon-svg:hover{
+    fill:#2196F3;
+}
+
+.back-icon-svg{
+    position:absolute;
+    margin-left:14px;
+}
 
 #close-btn{
-position:relative;
+display:flex;
+position:absolute;
 background-color: #ECECEC;
-top: -219px;
-left:100%;
-width: 20px;
-height: 20px;
-border-radius:5px;
+top: 8px;
+right:8px;
+width: 30px;
+height: 30px;
+border-radius:15px;
 cursor:pointer;
+justify-content: center;
+align-items: center;
+padding:10px;
+border: 1px solid #0000001A
+}
+
+.close{
+    display:flex;
+}
+
+.icons:hover,
+.icons:focus{   
+    fill:#2196F3;
 }
 
 
+#close-btn:hover{
+ background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
 
+}
 .is-hidden{
 visibility: hidden;
+}
+
+
+.form-dates{
+display:flex;
+justify-content: space-between;
+}
+
+
+.section-form{
+display:flex;
+position: relative; 
+height: 86px;
+width: 570px;
+display:inline-block;
+align-items: center;
+}
+
+.btn-telegram{
+display: flex;
+background-color: #2196F3;
+height: 50px;
+width: 200px;
+text-align: center;
+justify-content:space-evenly;   
+align-items: center;
+border-radius: 5px;
+}
+
+.btn-telegram:hover{
+box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+.btn-telegram img{
+width:24px;
+height: 24px;
+}
+
+.form-fill{
+display: flex;
+height: 50px;
+width:350px;
+gap:20px;
+border: 1px solid #FFFFFF;
+padding: 0 10px;
+align-items: center;
+}
+
+.form-fill:hover{
+border: 1px solid #FFFFFF4D
+}
+
+.form-fill:focus{
+    box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+#btn-sub{
+background-color: transparent;
+border:none; 
+font-family: Roboto;
+font-size: 16px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.06em;
+text-align: center;
+color: #FFFFFF;
+}
+
+#mail{
+border: none;
+background-color:transparent;
+height: 20px;
+width: 241px;
 }
