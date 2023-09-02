@@ -427,9 +427,12 @@
   width: 261px;
   height: 50px;
   border-radius: 4px;
+}
+.canvas__btn:focus, .canvas__btn:hover {
   background-color: #166fb8;
   color: rgb(255, 255, 255);
 }
+
 .about__img {
   display: block;
   margin: auto;
@@ -771,7 +774,8 @@
 /*MENU PORFAFOLIO*/
 .menu {
   display: flex;
-  max-width: 611px;
+  width: 611px;
+  height: 54px;
   align-items: flex-end;
   list-style-type: none;
   margin-left: auto;
@@ -799,6 +803,8 @@
 .menu__btn:focus,
 .menu__btn:hover {
   background-color: #2196f3;
+  padding: 10px 10px;
+  border-radius: 4px;
   color: #FFFFFF;
   font-weight: 500;
 }
