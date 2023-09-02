@@ -1,0 +1,173 @@
+
+.backdrop-container 
+    top: 0
+    left: 0
+    position: absolute
+    background-color: $back-color
+    box-shadow: $back-shadow
+    width: 100vw
+    height: 100vh
+    justify-content: flex-end
+    align-items: center
+    pointer-events: painted
+    z-index: 1
+
+
+.modal 
+    padding: 40px 40px
+    width: 528px
+    height: 581px
+    background-color: white
+    border: 1px solid black
+    margin: auto
+    border-radius: 4px
+    position: relative
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+
+
+.modal h1 
+    top: 100px
+    font-size: 25px
+    font-weight: 500
+    margin-bottom: 20px
+    font-family: $main-font
+    font-size: 20px
+    font-weight: 700
+    line-height: 23px
+    letter-spacing: 0.03em
+    text-align: center
+
+
+
+.input-field 
+    width: 100%
+    padding: 0
+    margin: 0
+    outline: none
+    height: 40px
+    padding-left: 40px
+
+
+.box-text 
+    scrollbar-width: 200px
+    outline: none
+    margin-bottom: 30px
+    height: 120px
+
+
+.box-text::placeholder 
+    font-family: $main-font
+    font-size: 12px
+    font-weight: 400
+    line-height: 14px
+    letter-spacing: 0.01em
+    text-align: left
+    color: $placeholder-text
+
+
+
+.terminos 
+    display: inline-flex
+    gap: 20px
+    padding-left: 2.5rem
+    width: 25rem
+    font-family: $main-font
+    font-size: 14px
+    font-weight: 400
+    line-height: 24px
+    letter-spacing: 0.03em
+    text-align: left
+    color: $color-light
+
+
+
+.modal__submit 
+    display: flex
+    width: 12.5rem
+    height: 3.125rem
+    color: $Secundary-text-color
+    background-color: $primary-text-color
+    border-style: none
+    margin: auto
+    justify-content: center
+    align-items: center
+    border-radius: 4px
+    position: static
+    margin-bottom: -10px
+
+
+
+.modal__submit:focus,
+.modal__submit:hover 
+    box-shadow: $box-shadow-btn
+
+
+.modal__user 
+    font-family: $main-font
+    font-size: 12px
+    font-weight: 400
+    line-height: 14px
+    letter-spacing: 0.01em
+    text-align: left
+    color: $color-light
+
+
+.container-field 
+    position: relative
+    display: flex
+    height: 40px
+    align-items: center
+
+
+
+.box-text:focus,
+.box-text:hover,
+.input-field:hover,
+.input-field.focus 
+    border: 1px solid $primary-text-color
+
+
+.container-field:hover,
+.container-field:focus .back-icon-svg:hover 
+    fill: $primary-text-color
+
+
+.back-icon-svg 
+    position: absolute
+    margin-left: 14px
+
+
+#close-btn 
+    display: flex
+    position: absolute
+    background-color: $color-text-light
+    top: 8px
+    right: 8px
+    width: 30px
+    height: 30px
+    border-radius: 15px
+    cursor: pointer
+    justify-content: center
+    align-items: center
+    padding: 10px
+    border: 1px solid $border-btn
+
+
+.close 
+    display: flex
+
+
+.icons:hover,
+.icons:focus 
+    fill: $primary-text-color
+
+
+#close-btn:hover
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(0deg, #FFFFFF, #FFFFFF)
+
+
+.is-hidden 
+    visibility: hidden
+

@@ -1,0 +1,142 @@
+/* COMIENZA EL FOOTER*/
+@mixin fontfeature($type,$size,$weight)
+        font-family: $type
+        font-size: $size
+        font-weight: $weight
+        text-decoration: none
+
+
+
+.footer__link
+    @include fontfeature($second-font,26px,700)
+    line-height: 30.52px
+
+
+
+.contact
+    display: flex
+    flex-direction: column
+    margin-top:20px
+    @include fontfeature($main-font,14px,400)
+    color: $rgba-light
+
+.contact__link
+    @include fontfeature($main-font,14px,400)
+    line-height: 24px
+    letter-spacing: 0.03em
+    text-align: left
+    color: $contact-link
+    text-decoration: none
+
+
+.contact__add 
+    font-weight: bold
+
+
+.contact__add, .contact__link
+  &:hover, &:focus
+    color: $primary-text-color
+
+.social  .social__box
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+
+.social__title
+    @include fontfeature($main-font,14px,700)
+    line-height: 16px
+    letter-spacing: 0.03em
+    text-align: left
+    width: auto
+    height: 16px
+    color: $Secundary-text-color
+    margin-bottom:20px
+
+
+.news 
+    display: flex
+    position: relative
+    height: 86px
+    width: 570px
+    display: inline-block
+    align-items: center
+
+.news__title 
+    @include fontfeature($main-font,14px,700)
+    line-height: 16px
+    letter-spacing: 0.03em
+    text-align: left
+    width: auto
+    height: 16px
+    top: 2751px
+    left: 516px
+    color: $Secundary-text-color
+    margin-bottom: 20px
+
+    
+.form 
+    display: flex
+    justify-content: space-between
+
+
+
+.form__fill 
+    display: flex
+    height: 50px
+    width: 350px
+    gap: 20px
+    border: 1px solid $Secundary-text-color
+    padding: 0 10px
+    align-items: center
+
+
+    &:hover 
+        border: 1px solid $colorlight-foot
+
+
+    &:focus 
+        box-shadow: 0px 4px 4px 0px $focuscolor-shadow
+
+
+
+
+.form__btn 
+    display: flex
+    background-color: $primary-text-color
+    height: 50px
+    width: 200px
+    text-align: center
+    justify-content: space-evenly
+    align-items: center
+    border-radius: 5px
+
+
+.form__btn:hover 
+    box-shadow: 0px 4px 4px 0px $focuscolor-shadow
+
+
+.form__btn img 
+    width: 24px
+    height: 24px
+
+
+#btn-sub 
+    @include fontfeature($main-font,16px,700)
+    background-color: transparent
+    border: none
+    line-height: 30px
+    letter-spacing: 0.06em
+    text-align: center
+    color: $Secundary-text-color
+
+
+#mail 
+    border: none
+    background-color: transparent
+    height: 20px
+    width: 241px
+
+
+
+/* Finaliza  Seccion*/

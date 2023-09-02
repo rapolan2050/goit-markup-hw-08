@@ -1,0 +1,54 @@
+@mixin fontfeature($weight,$size)
+    font-family: $main-font
+    font-weight: $weight
+    font-size: $size
+    line-height: 1.19
+    letter-spacing: 0.03em
+    text-align: center
+    font-style: normal
+
+
+.team__title 
+    @include fontfeature(700,36px)
+    padding-bottom: 50px
+
+
+.card__title 
+    @include fontfeature(500,16px)
+
+
+.card__manager 
+    @include fontfeature(400,16px)
+    color: $color-light-rgba
+    margin-top: 10px
+
+
+/*Photo line manager*/
+
+.card 
+    width: 270px
+    height: 428px
+    box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F
+    background: #ffffff
+
+
+
+.card__body 
+    padding: 20px 24px
+
+
+
+/*social links*/
+.redes 
+    display: flex
+    height: 44px
+    margin-top: 16px
+    justify-content: space-around
+    align-items: center
+
+
+.redes__icon 
+    height: 20px
+    width: 20px
+
+/*finaliza social links*/
