@@ -2,7 +2,11 @@
 @mixin subline()
     .header__subline::after 
         visibility: visible
- 
+
+@mixin light()
+    .header__image
+        fill:$primary-text-color
+
 .header__subline 
     display: flex
     display: inline
@@ -107,6 +111,11 @@
   &.focus, &:hover
     color: $primary-text-color
 
+
+.header__item
+   &:focus, &:hover
+       @include light()
+
 .header__link
   &:focus, &:hover
     color: $primary-text-color
@@ -116,6 +125,9 @@
     background-color: $Secundary-text-color
     color: $primary-text-color
 
-/*
+.redes__svg
+ fill: $foot-svgcol
 
-
+.redes__svg
+ &:focus, &:hover
+     fill: $primary-text-color

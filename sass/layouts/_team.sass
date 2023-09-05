@@ -8,6 +8,7 @@
     font-style: normal
 
 
+
 .team__title 
     @include fontfeature(700,36px)
     padding-bottom: 50px
@@ -52,3 +53,36 @@
     width: 20px
 
 /*finaliza social links*/
+
+
+.circle
+    position: absolute 
+    fill: $Secundary-text-color
+
+.svg__log 
+    fill:$foot-svgcol
+    z-index: 1
+
+.redes 
+    display: flex
+    height: 50px
+
+
+.redes__svg 
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    width: 44px
+    height: 44px
+
+
+.redes__svg:hover 
+
+    .svg__log 
+        fill: $Secundary-text-color
+
+    .circle 
+        fill:$primary-text-color
+    
+

@@ -53,7 +53,7 @@
 .box-text 
     scrollbar-width: 200px
     outline: none
-    margin-bottom: 30px
+    margin-bottom: 10px
     height: 120px
 
 
@@ -65,14 +65,18 @@
     letter-spacing: 0.01em
     text-align: left
     color: $placeholder-text
+  
+.check__ok
+    margin-top:5px
 
-
+.check__boxes
+    display: flex
+    margin: auto
+    gap: 30px
 
 .terminos 
-    display: inline-flex
-    gap: 20px
-    padding-left: 2.5rem
-    width: 25rem
+    display: flex
+    width: 300px
     font-family: $main-font
     font-size: 14px
     font-weight: 400
@@ -81,6 +85,31 @@
     text-align: left
     color: $color-light
 
+
+
+
+.box__empty
+    display: flex
+    margin: auto
+    width: 14px
+    height: 14px
+    background-color: white
+    cursor: pointer
+    border: 1px solid $primary-text-color
+    position: absolute
+
+
+.check__ready
+    display: none
+    height: 50px
+    width: 50px
+    background-image: url(/imagenes/iconos/checkview.svg)
+    background-repeat: no-repeat
+    position: absolute
+
+
+.box__empty:focus+.check__ready 
+    display: block
 
 
 .modal__submit 
@@ -95,7 +124,7 @@
     align-items: center
     border-radius: 4px
     position: static
-    margin-bottom: -10px
+    margin-bottom: -18px
 
 
 
@@ -120,6 +149,8 @@
     height: 40px
     align-items: center
 
+.space
+    margin-top:10px
 
 
 .box-text:focus,
@@ -154,6 +185,8 @@
     padding: 10px
     border: 1px solid $border-btn
 
+.modal__close
+  color:$primary-text-color
 
 .close 
     display: flex

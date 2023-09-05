@@ -1,54 +1,42 @@
 
 /* section clientes*/
+.clients__log 
+    border: 1px solid $foot-svgcol
+    width: 170px
+    height: 92px
+    display: block
+    align-items: center
+    position: relative
+    justify-content: center
+    display: flex
+    margin: auto
+    border-radius: 4px
 
-.clients__title 
-    margin-bottom: 38px
+.clients__svg 
+     fill: $foot-svgcol
+
+
+.clients 
+    display: flex
+    width: 1170px
+    gap: 30px
+    height: 100px   
+    justify-content: space-between
+
+
+.clients__log:hover 
+    border-color: $primary-text-color
+
+    .clients__svg
+        fill: $primary-text-color
+    
+
+.clients__title
     font-family: $main-font
     font-size: 36px
     font-weight: 700
     line-height: 42px
     letter-spacing: 0.03em
     text-align: center
-
-
-.clients .clients__link 
-    display: flex
-    display: inline-block
-    border: 1px ridge grey
-    width: 170px
-    height: 81px
-    flex-shrink: 1
-
-
-
-.clients__link img 
-    display: flex
-    display: block
-    margin: auto
-    margin-top: 15px
-
-
-
-.clients__link:nth-child(2) 
-     margin-right: -1
-
-
-.clients__link:nth-child(3)
-    margin-left: 2.17%
-
-
-.clients__link:nth-child(4)
-    margin-left: 2.17%
-
-.clients__link:nth-child(5)
-    margin-left: 2.17%
-
-
-.clients__link:nth-child(6)
-    margin-left: 2.17%
-
-.clients__link:nth-child(7)
-    margin-left: 2.17%
-
-
-/* Termina seccion */
+    margin-top:188px
+    margin-bottom:50px

@@ -14,10 +14,11 @@
     }
 })();
 
-function mostrar() {
-    document.getElementById('check-svg').style.display = 'block';
-}
 
-function ocultar() {
-    document.getElementById('check-svg').style.display = 'none';
-}
+// function mostrar() {
+//     document.getElementById('back-icon-svg').style.display = 'block';
+// }
+
+// function ocultar() {
+//     document.getElementById('check-svg').style.display = 'none';
+// }

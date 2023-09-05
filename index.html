@@ -33,12 +33,16 @@
             </ul>
             <ul class="header__contact">
                 <li class="header__item">
-                    <img class="header__image" src="./imagenes/iconos/sobre.svg" alt="mail">
+                    <svg class="header__image" width="16px" height="13px">
+                        <use xlink:href="./imagenes/icons.svg#sobre">
+                    </svg>
                     <a href="info@studio.com" class="header__link">info@devstudio.com</a>
                 </li>
 
                 <li class="header__item">
-                    <img class="header__image" src="./imagenes/iconos/teléfono_inteligente.svg" alt="teléfono inteligente">
+                    <svg class="header__image" width="18px" height="18px">
+                        <use xlink:href="./imagenes/icons.svg#telefono-inte">
+                    </svg>
                     <a href="tel:+525555296000" class="header__link">+525555296000</a>
                 </li>
             </ul>
@@ -61,31 +65,32 @@
                         <input class="input-field" type="text" name="usr-name" id="usr-name">
                     </div>
 
-                    <label for="phone" class="modal__user">Teléfono:</label>
+                    <label for="phone" class="modal__user space">Teléfono:</label>
                     <div class="container-field">
                         <svg class="back-icon-svg" width="18px" height="18px">
                             <use xlink:href="./imagenes/icons.svg#telecontac">
                         </svg>
                         <input class="input-field" type="tel" required name="phone" id="phone">
                     </div>
-                    <label for="email" class="modal__user">E-mail</label>
+                    <label for="email" class="modal__user space">E-mail</label>
                     <div class="container-field">
                         <svg class="back-icon-svg" width="18px" height="18px">
                             <use xlink:href="./imagenes/icons.svg#mail">
                         </svg>
                         <input class="input-field" type="email" required name="email" id="email">
                     </div>
-                    <label for="text-comment" class="modal__user">Comentarios</label>
+                    <label for="text-comment" class="modal__user space ">Comentarios</label>
                     <textarea class="box-text" cols="30" rows="5" name="subject" placeholder="Introduzca texto" id="text-comment"></textarea>
-
-                    <label onclick="mostrar()" class="terminos">
-                        <span class="check-box">
-                            <svg id="check-svg" width="18px" height="18px">
-                                <use xlink:href="./imagenes/icons.svg#checkbox">
-                            </svg>
-                        </span>Estoy de acuerdo con el boletin informativo y acepto los Términos
-                        y Condiciones.
-                    </label>
+                    <div class="check__boxes">
+                        <div class="check__ok">
+                            <span class="box__empty" tabindex="1"></span>
+                            <span class="check__ready"></span>
+                        </div>
+                        <label class="terminos">
+                            <span class="text__term"> Estoy de acuerdo con el boletin informativo y acepto los Términos
+                                y Condiciones.</span>
+                        </label>
+                    </div>
                     <button data-modal-close id="close-btn" type="button" class="modal__close">x
                         <svg class="close">
                             <use class="icons" xlink:href="./imagenes/icons.svg#xector">
@@ -158,10 +163,38 @@
                         <h3 class="card__title">Andres Cubo</h3>
                         <p class="card__manager">Diseñador de Productos</p>
                         <div class="redes">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/instagram.svg" alt="instagram">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/twitter.svg" alt="twitter">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/facebook.svg" alt="facebook">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/linkedin.svg" alt="linkedin">
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#into">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#insta">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#face">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#link">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -172,10 +205,38 @@
                         <h3 class="card__title">Carla Palacios</h3>
                         <p class="card__manager">Desarrollador Frontend</p>
                         <div class="redes">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/instagram.svg" alt="instagram">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/twitter.svg" alt="twitter">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/facebook.svg" alt="facebook">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/linkedin.svg" alt="linkedin">
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#into">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#insta">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#face">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#link">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -185,10 +246,38 @@
                         <h3 class="card__title">Mario Dorado</h3>
                         <p class="card__manager">Marketing</p>
                         <div class="redes">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/instagram.svg" alt="instagram">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/twitter.svg" alt="twitter">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/facebook.svg" alt="facebook">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/linkedin.svg" alt="linkedin">
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#into">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#insta">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#face">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#link">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -198,37 +287,77 @@
                         <h3 class="card__title">Pablo Mijangos</h3>
                         <p class="card__manager">Desarrollador IU</p>
                         <div class="redes">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/instagram.svg" alt="instagram">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/twitter.svg" alt="twitter">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/facebook.svg" alt="facebook">
-                            <img class="redes__icon" src="./imagenes/iconos/20x20/linkedin.svg" alt="linkedin">
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#into">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#insta">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#face">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
+                            <div class="redes__svg">
+                                <svg class="svg__log" width="20" height="20">
+                                    <use xlink:href="/imagenes/icons.svg#link">
+                                </svg>
+                                <svg class="circle" width="44" height="44">
+                                    <use xlink:href="/imagenes/icons.svg#outside">
+                                </svg>
+                            </div>
                         </div>
-
                     </div>
                 </li>
             </ul>
         </section>
+        <h2 class="clients__title">Clientes Regulares</h2>
         <section class="clients">
-            <h2 class="clients__title">Clientes Regulares</h2>
-            <a class="clients__link" href="#">
-                <img class="clients__img" src="./imagenes/iconos/grupo1.svg" alt="cia1">
-            </a>
-            <a class="clients__link" href="#">
-                <img class="clients__img" src="./imagenes/iconos/Company1.svg" alt="cia1">
-            </a>
-            <a class="clients__link" href="#">
-                <img class="clients__img" src="./imagenes/iconos/Company2.svg" alt="cia1">
-            </a>
-            <a class="clients__link" href="#">
-                <img class="clients__img" src="./imagenes/iconos/foster_peters.svg" alt="cia1">
-            </a>
-            <a class="clients__link" href="#">
-                <img class="clients__img" src="./imagenes/iconos/brand.svg" alt="cia1">
-            </a>
-            <a class="clients__link" href="#">
-                <img class="clients__img" src="./imagenes/iconos/Company.svg" alt="cia1">
-            </a>
+            <div class="clients__log">
+                <svg class="clients__svg" width="41" height="46">
+                    <use xlink:href="/imagenes/icons.svg#cli-1">
+                </svg>
+            </div>
+            <div class="clients__log">
+                <svg class="clients__svg" width="106" height="53">
+                    <use xlink:href="/imagenes/icons.svg#cli-2">
+                </svg>
+            </div>
+            <div class="clients__log">
+                <svg class="clients__svg" width="45" height="42">
+                    <use xlink:href="/imagenes/icons.svg#cli-3">
+                </svg>
+            </div>
+            <div class="clients__log">
+                <svg class="clients__svg" width="85" height="42">
+                    <use xlink:href="/imagenes/icons.svg#foster">
+                </svg>
+            </div>
+            <div class="clients__log">
+                <svg class="clients__svg" width="63" height="47">
+                    <use xlink:href="/imagenes/icons.svg#brand">
+                </svg>
+            </div>
+            <div class="clients__log">
+                <svg class="clients__svg" width="106" height="53">
+                    <use xlink:href="/imagenes/icons.svg#company">
+                </svg>
+            </div>
         </section>
+
     </main>
     <footer class="footer">
         <section class="footer__box">
@@ -255,25 +384,29 @@
         <section class="social">
             <h3 class="social__title">ENCUENTRENOS EN</h3>
             <div class="social__box">
-                <a class="social__link" href="#">
-                    <img src="./imagenes/iconos/iconosfooter/instagram.svg" alt="instagram">
-                </a>
-                <a class="social__link" href="#">
-                    <img src="./imagenes/iconos/iconosfooter/twitter.svg" alt="twitter">
-                </a>
-                <a class="social__link" href="#">
-                    <img src="./imagenes/iconos/iconosfooter/facebook.svg" alt="facebook">
-                </a>
-                <a class="social__link" href="#">
-                    <img src="./imagenes/iconos/iconosfooter/linkedin.svg" alt="linkedin">
-                </a>
+                <svg class="ico__svg" width="44" height="44" alt="instagram">
+                    <use xlink:href="/imagenes/icons.svg#instagram">
+                        <a class="social__link" href="https://instagram.com/"></a>
+                </svg>
+                <svg class="ico__svg" width="44" height="44">
+                    <use xlink:href="/imagenes/icons.svg#twitter">
+                        <a class="social__link" href="https:/twitter.com/"></a>
+                </svg>
+                <svg class="ico__svg" width="44" height="44">
+                    <use xlink:href="/imagenes/icons.svg#facebook">
+                        <a class="social__link" href="https://facebook.com/"></a>
+                </svg>
+                <svg class="ico__svg" width="44" height="44">
+                    <use xlink:href="/imagenes/icons.svg#linkedin">
+                        <a class="social__link" href="https://linkedin.com/"></a>
+                </svg>
             </div>
         </section>
         <section class="news">
             <h2 class="news__title">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h2>
             <form class="form">
                 <div class="form__fill">
-                    <input type="email" name="email" id="mail" placeholder="correo electrónico">
+                    <input class="form__input" type="email" name="email" id="mail" placeholder="correo electrónico">
                 </div>
                 <div class="form__btn">
                     <button type="submit" class="form__suscribe" id="btn-sub">

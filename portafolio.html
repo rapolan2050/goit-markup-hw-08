@@ -33,14 +33,19 @@
             </ul>
             <ul class="header__contact">
                 <li class="header__item">
-                    <img class="header__image" src="./imagenes/iconos/sobre.svg" alt="mail">
+                    <svg class="header__image" width="16px" height="13px">
+                        <use xlink:href="./imagenes/icons.svg#sobre">
+                    </svg>
                     <a href="info@studio.com" class="header__link">info@devstudio.com</a>
                 </li>
 
                 <li class="header__item">
-                    <img class="header__image" src="./imagenes/iconos/teléfono_inteligente.svg" alt="teléfono inteligente">
+                    <svg class="header__image" width="18px" height="18px">
+                        <use xlink:href="./imagenes/icons.svg#telefono-inte">
+                    </svg>
                     <a href="tel:+525555296000" class="header__link">+525555296000</a>
                 </li>
+
             </ul>
         </nav>
     </header>
@@ -218,25 +223,29 @@
         <section class="social">
             <h3 class="social__title">ENCUENTRENOS EN</h3>
             <div class="social__box">
-                <a class="social__link" href="#">
-                    <img src="./imagenes/iconos/iconosfooter/instagram.svg" alt="instagram">
-                </a>
-                <a class="social__link" href="#">
-                    <img src="./imagenes/iconos/iconosfooter/twitter.svg" alt="twitter">
-                </a>
-                <a class="social__link" href="#">
-                    <img src="./imagenes/iconos/iconosfooter/facebook.svg" alt="facebook">
-                </a>
-                <a class="social__link" href="#">
-                    <img src="./imagenes/iconos/iconosfooter/linkedin.svg" alt="linkedin">
-                </a>
+                <svg class="ico__svg" width="44" height="44" alt="instagram">
+                    <use xlink:href="/imagenes/icons.svg#instagram">
+                        <a class="social__link" href="https://instagram.com/"></a>
+                </svg>
+                <svg class="ico__svg" width="44" height="44">
+                    <use xlink:href="/imagenes/icons.svg#twitter">
+                        <a class="social__link" href="https:/twitter.com/"></a>
+                </svg>
+                <svg class="ico__svg" width="44" height="44">
+                    <use xlink:href="/imagenes/icons.svg#facebook">
+                        <a class="social__link" href="https://facebook.com/"></a>
+                </svg>
+                <svg class="ico__svg" width="44" height="44">
+                    <use xlink:href="/imagenes/icons.svg#linkedin">
+                        <a class="social__link" href="https://linkedin.com/"></a>
+                </svg>
             </div>
         </section>
         <section class="news">
             <h2 class="news__title">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h2>
             <form class="form">
                 <div class="form__fill">
-                    <input type="email" name="email" id="mail" placeholder="correo electrónico">
+                    <input class="form__input" type="email" name="email" id="mail" placeholder="correo electrónico">
                 </div>
                 <div class="form__btn">
                     <button type="submit" class="form__suscribe" id="btn-sub">

@@ -41,6 +41,7 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+    gap:10px
 
 
 .social__title
@@ -52,6 +53,14 @@
     height: 16px
     color: $Secundary-text-color
     margin-bottom:20px
+
+
+.ico__svg
+    fill:$coloricofooter
+        
+.ico__svg
+  &:hover, &:focus
+    fill: $primary-text-color
 
 
 .news 
@@ -90,6 +99,8 @@
     padding: 0 10px
     align-items: center
 
+    .form__input
+        color:$Secundary-text-color
 
     &:hover 
         border: 1px solid $colorlight-foot
